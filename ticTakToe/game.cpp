@@ -149,7 +149,6 @@ public:
     void startGame()
     {
         int isGameEnded = false;
-        int cnt = 0;
         while (!isGameEnded)
         {
             player *currentPlayer = players.front();
@@ -176,10 +175,6 @@ public:
             {
                 cout << "looks like a tie" << endl;
                 isGameEnded = 1;
-            }
-            if (cnt == 10)
-            {
-                break;
             }
         }
     }
