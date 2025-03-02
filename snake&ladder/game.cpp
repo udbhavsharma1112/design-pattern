@@ -98,7 +98,7 @@ class Board{
     }
     int getUpdatedMove(int currentStep, int step){
         if(currentStep+step>maxNumber) {
-            return -1;
+            return currentStep;
         }
         else{
             int tempDestination = currentStep + step;
